@@ -1,0 +1,14 @@
+{% extends 'parent.html' %}
+{% block title %}
+<title>This is child2</title> /* Overidden */ 
+{% endblock %}
+
+{% block body_block %}
+<body>
+    <center>
+        <h1>This is child2</h1>
+    </center>
+
+    <a href="{% url 'child:child' %}">click here to see child</a>
+</body>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'parent2.html' %}
+{% load static %}
+{% block body_block %}
+<body>
+    <h1>These are additional functionality of child3 along with it's parent2 properties</h1>
+    <marquee>
+        <h2 style="color: brown;">Here you need to have an empty block_body tag  in body in order to add more functionalities in chilid page</h2>
+    </marquee>
+    <div class="card" style="width: 18rem; background-color:rgb(223, 74, 74) ">
+        <img src="{% static 'images/itachi.jpg' %}" style="width:18rem;" class="card-img-top" alt="Sunset Over the Sea"/>
+        <div class="card-body" style="text-align: center;">
+          <p class="card-text">Itachi Uchiha of the Sharingaan</p>
+        </div>
+    </div>
+</body>
+
+{% endblock %}
